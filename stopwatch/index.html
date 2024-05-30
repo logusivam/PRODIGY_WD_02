@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stopwatch Web-App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="background"></div>
+  <div class="container">
+    <div class="header">
+      <h1>Stopwatch App</h1>
+    </div>
+      <div class="timer">
+        <div class="time-item">
+          <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="centiseconds">00</span>
+        </div>
+        <div class="buttons-container">
+          <button id="btn-start" class="btn" title="Press space key">Start</button>
+          <button id="btn-lap" class="btn" title="Press L">Lap</button>
+          <button id="btn-restart" class="btn" title="Press R">Restart</button>
+        </div>
+      </div>
+    <ul id="lap-list"></ul>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

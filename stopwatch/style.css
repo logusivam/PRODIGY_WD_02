@@ -1,0 +1,92 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 2rem;
+  top: 50%;
+  background-color: rgb(179, 176, 176);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+    animation:animatecolor 4s linear infinite;
+}
+
+.container:hover{
+    box-shadow:  8px 8px 8px #0a7beb,  -8px -8px 8px #00ddfff9;
+}
+@keyframes animatecolor{
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(360deg);
+    }
+  }
+.header {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #606060;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0335ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.timer span {
+  margin: 0 0.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#lap-list {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 2s;
+  z-index: -1;
+}
